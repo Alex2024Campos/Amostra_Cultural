@@ -38,3 +38,8 @@ https://sketchfab.com/3d-models/old-house-77324271ad6248468b17d3c41bb28b26
 https://assetstore.unity.com/publishers/50313
 
 https://assetstore.unity.com/packages/3d/props/rope-tool-200856
+
+![image](https://github.com/user-attachments/assets/a6d8fbbc-744a-4779-92b2-5d14bc3c1233)
+
+
+https://lucid.app/lucidchart/a7e6b56a-dd2e-47b6-91de-6ead33ebe72f/edit?viewport_loc=-1800%2C-1525%2C4010%2C1946%2CHWEp-vi-RSFO&invitationId=inv_dc7244d2-b47e-4b05-a378-fb2bab6301a6
