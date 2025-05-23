@@ -43,3 +43,165 @@ https://assetstore.unity.com/packages/3d/props/rope-tool-200856
 
 
 https://lucid.app/lucidchart/a7e6b56a-dd2e-47b6-91de-6ead33ebe72f/edit?viewport_loc=-1800%2C-1525%2C4010%2C1946%2CHWEp-vi-RSFO&invitationId=inv_dc7244d2-b47e-4b05-a378-fb2bab6301a6
+
+
+using NUnit.Framework.Constraints;
+using UnityEditor.Rendering;
+using UnityEngine;
+using TMPro;
+
+public class NPC : MonoBehaviour
+{
+    public int I;
+    public string[] DialogText;
+    public TMP_Text ActualDialog;
+    private Vector3 Rotate;
+    void Start()
+    {
+        I = 0;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void Dialog()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ActualDialog.text = DialogText[I];
+            I++;
+        }
+    }
+}
+
+
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class UI : MonoBehaviour
+{
+    public string[] Objective;
+    private TMP_Text ActualObjective;
+    private TMP_Text ConsumibleValor;
+
+    public Slider HPBar;
+    public float Maxlife;
+    public float ActualLife;
+
+
+    void Start()
+    {
+        Maxlife = HPBar.maxValue;
+        ActualLife = Maxlife;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Space)) {
+            ActualLife -= 10;
+        }
+        HPBar.value = ActualLife;
+    }
+
+}
+
+using System.Drawing;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    public Collision x;
+    public UI ui;
+
+    public float Life;
+    public float Damage;
+    private float Range;
+
+    private bool IsAttacking;
+    public bool Spotted;
+    private string InteractText;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Life = ui.Maxlife;
+        IsAttacking = false;
+        Spotted = false;
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+
+    private void Attack()
+    {
+        if (Input.GetKey(KeyCode.Mouse0)) {
+            IsAttacking = true;
+
+        }
+    }
+
+    private void Interaction()
+    {
+    }
+
+
+}
+
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class UI : MonoBehaviour
+{
+    public int I;
+    public string[] Objective;
+    private TMP_Text ActualObjective;
+    private TMP_Text ConsumibleValor;
+
+    public Slider HPBar;
+    public float Maxlife;
+    public float ActualLife;
+
+    private bool Scenepassed;
+
+    void Start()
+    {
+        I = 0;
+        Maxlife = HPBar.maxValue;
+        ActualLife = Maxlife;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Space)) {
+            ActualLife -= 10;
+        }
+        HPBar.value = ActualLife;
+    }
+
+    private void SwitchObjective()
+    { 
+            if(Scenepassed = true)
+        {
+            ActualObjective.text = Objective[I];
+            I++;
+        }
+
+    }
+}
+
