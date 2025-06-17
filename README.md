@@ -42,6 +42,52 @@
 
 
 
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+
+public class UI : MonoBehaviour
+{
+    private int R = 0;
+    public string Scene;
+    public string[] Objective = new string[5];
+    private TMP_Text ActualObjective;
+
+    void Start()
+    {
+        SceneObjective(R);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+
+    private void SceneObjective(int I)
+    {
+        ActualObjective.text = Objective[I];
+
+    }
+
+    public void ChangeScene(string SceneName)
+    {
+
+        SceneManager.LoadScene(SceneName);
+        R++;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        ChangeScene(Scene);
+    }
+}
+
+
+
 > [!NOTE]
  > ` - Avisos:`
  > Esse setor da documentação terá a função de conter qualquer aviso ou anúncio sobre o nosso jogo e sua documentação.
