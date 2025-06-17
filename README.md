@@ -11,6 +11,37 @@
 >- Kauan Merida
 >
 
+10. Cena Final
+
+### 10.1. Contexto da Fase:
+- **Resumo da Fase:** A fase final do jogo e que consiste em uma batalha final contra o chefão do jogo, o "Aratã". Aratã é o ancião-chefe daquela antigo tribo e presente no fim da jornada, protege os tesouros de seu povo. Enlouquecido pelo poder, ele elimina qualquer um que ouse aparecer em sua frente.
+
+### 10.2. Eventos da Fase:
+
+### 10.3. Scripts Utilizados na Fase:
+
+### 10.4 Inimigos Utilizados:
+- Aratã.
+
+### 10.5. Assets Usados:
+
+7. Cidade de Deus
+
+### 7.1. Contexto da Fase:
+- **Resumo da Fase:** Inspirada na cidade do próprio filme, a Cidade de Deus é uma parte urbanizada do nosso jogo, sendo o ponto de partida de Aiden em sua aventura em busca dos segredos e tesouros que estão por aquela região. Nela, o jogador busca informações conversando com os NPC's presentes e logo depois de uma investigação (no caso, os diálogos), ele começa a ser perseguido pelos mandrakes, assim sendo forçado a fugir para a floresta próxima a cidade.
+
+### 7.2. Eventos da Fase:
+
+### 7.3. Scripts Utilizados na Fase:
+
+### 7.4 Inimigos Utilizados:
+
+- Mandrakes.
+
+### 7.5. Assets Usados:
+
+
+
 > [!NOTE]
  > ` - Avisos:`
  > Esse setor da documentação terá a função de conter qualquer aviso ou anúncio sobre o nosso jogo e sua documentação.
